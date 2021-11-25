@@ -19,7 +19,7 @@ p, h1{
 
 }
 .menu {
-    background-color:rgb(128, 128, 128);
+    background-color:rgba(128, 128, 128, 0.746);
     padding: 24px 0;
     position: fixed;
     width: 100%;
@@ -36,7 +36,9 @@ p, h1{
     display: flex;
     list-style: none;
     gap: 32px;
+    margin-left: 32px;
 }
+
 
 .menu li a {
     text-decoration: none;
@@ -49,22 +51,39 @@ p, h1{
 
 .menu li a:hover {
     
-    color:yellow;
+    color:whitesmoke;
     font-size: 20px;
     border-radius: 32px;
+    background-color: rgba(128, 128, 128, 0.637);
     
-
 }
 
 
+.custom-input {
+    width: 200px;
+    border: 0;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    transition: .2s;
+    margin-left:900px;
+}
+
+.custom-input:focus {
+    background-color:rgb(245, 245, 245);
+    width: 400px;
+}
+
+
+.custom-input :nth-child(3) {
+    background-color: blue;
+}
 
 .main-first .banner {
     width: 100%;
     height: 600px;
     object-fit: cover; 
 }
-
-
 
 .menu li  {
     font-weight: 500;
@@ -79,7 +98,6 @@ p, h1{
     /* max-width: 1200px; */
      margin: 72px 20px;
     
-
 }
 
     .main-first .jogos .kratos {
@@ -93,19 +111,30 @@ p, h1{
     .main-first .kratos a {
         text-decoration: none;
         color:white;
+        font-size: 24px;
         background-color: orangered;
         border-radius: 12px;
-        
-      
+        padding: 24px 40px;
+        text-align: center;
+        display: block;
+
     }
 
+   .jogos .kratos p ::first-line {
+       color: orangered;
+       margin-left: 32px;
+    }
 
+    .jogos .kratos p ::first-letter{
+        color: red;
+        
+     }
 
     .main-first .kratos img {
         width: 100%;
         height: 500px;
         object-fit: contain;
- 
+      
     }
 
    
